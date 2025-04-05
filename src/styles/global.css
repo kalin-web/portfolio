@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #ff5b30;
+    --primary-dark: #e94117;
+    --white-color: #eeeeee;
+    --secondary-white-color: #d3d6d8;
+    --secondary-color: #6c757d;
+    --light-color: #2f2f2f;
+    --dark-color: #212529;
+    --success-color: #28a745;
+    --max-width: 1200px;
+
+    --title-font: 'Montserrat', sans-serif;
+    --text-font: "Roboto", sans-serif;
+    --hero-font: sans-serif;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--text-font);
+    line-height: 1.6;
+    color: var(--dark-color);
+    background: linear-gradient(
+      to right,
+      var(--light-color) 0%, 
+      #393939 20%, 
+      #393939 80%, 
+      var(--light-color) 100%
+    )
+  }
+  
+  .container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: var(--primary-dark);
+  }
+
+  .initial-animation {
+    animation: fadeInPage 0.8s ease-out forwards;
+  }
+  
+  .tab-change-animation {
+    animation: fadeInTab 0.5s ease-out forwards;
+  }
+  
+  @keyframes fadeInPage {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInTab {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

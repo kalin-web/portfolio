@@ -1,0 +1,107 @@
+.contact {
+  padding: 40px 0;
+}
+
+.contact-title {
+  border: none;
+  box-shadow: none;
+  text-align: center;
+  margin: auto;
+  padding: 0;
+  margin-bottom: 35px;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contact-info {
+  background-color: var(--primary-color);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
+  border-bottom: 5px solid var(--white-color);
+  border-left: 5px solid var(--white-color);
+}
+
+.contact-text {
+  font-size: 1.1rem;
+  color: var(--secondary-white-color);
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  color: var(--secondary-white-color);
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color .25s, scale .25s;
+  padding: 10px;
+  border-radius: 5px;
+  border-bottom: 3px solid #fff;
+}
+
+.contact-link:hover {
+  background-color: var(--primary-dark);
+  transform: translateX(5px);
+  scale: 1.02;
+}
+
+.email-link {
+  font-weight: 600;
+}
+
+.availability-info {
+  padding-top: 10px;
+}
+
+.availability-info p {
+  color: var(--secondary-white-color);
+  opacity: .9;
+}
+
+.social-icon-contact {
+  margin-right: 7px;
+  filter: invert(1);
+  height: 16px;
+  width: 16px;
+}
+
+.--gmail-icon {
+  filter: none;
+}
+
+.open-new-tab {
+  margin-left: 10px;
+  opacity: .9;
+}
+
+.contact-link:hover .open-new-tab {
+  opacity: .7;
+}
+
+@media screen and (max-width: 728px) {
+  .contact-text {
+    font-size: .95rem;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  .contact-link {
+    font-size: .85rem;
+    padding: 0 0 5px 0;
+  }
+  .contact-container {
+    padding: 5px;
+  }
+}
